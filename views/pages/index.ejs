@@ -76,6 +76,7 @@
   
 </head>
 <body>
+  <input id="Sign-In" type="button" value="Sign-In" onclick="name();" />
 <div id="top"> Fender </div>
 <div class="parallax"></div>
 <div id="middle">
@@ -124,6 +125,18 @@
 
   function doFunction() {
    clevertap.event.push("Product Viewed");             
+}
+  
+</script>
+<script type="text/javascript">
+
+  function name() {
+   clevertap.profile.push({
+ "Site": {
+   "Name": "Jack Montana", 
+   "Email": “jackmontana@example.com”
+ }
+});         
 }
   
 </script>

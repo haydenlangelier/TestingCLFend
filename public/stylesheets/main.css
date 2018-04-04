@@ -1,27 +1,77 @@
-.jumbotron {
-  background: #532F8C;
-  color: white;
-  padding-bottom: 80px; }
-  .jumbotron .btn-primary {
-    background: #845ac7;
-    border-color: #845ac7; }
-    .jumbotron .btn-primary:hover {
-      background: #7646c1; }
-  .jumbotron p {
-    color: #d9ccee;
-    max-width: 75%;
-    margin: 1em auto 2em; }
-  .navbar + .jumbotron {
-    margin-top: -20px; }
-  .jumbotron .lang-logo {
-    display: block;
-    background: #B01302;
-    border-radius: 50%;
-    overflow: hidden;
-    width: 100px;
-    height: 100px;
-    margin: auto;
-    border: 2px solid white; }
-    .jumbotron .lang-logo img {
-      max-width: 100%; }
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+p {color: black;}
+.gold { color: black; }
+.silver {color: black;}
+.bronze{color: black;}
+.parallax {background-image: url(http://images6.fanpop.com/image/photos/37800000/Fender-telecaster-fender-guitars-37881941-1600-1058.jpg);  height: 70%; background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;}
+#thisone { color: black   ;  }
+#middle {height:860px;text-align: center; background-color: white; margin-left: 20%; margin-right: 20%;  }
+#top {
+  top:0px;
+  left:0px;
+  width:100%;
+  color:#CCC;
+  background:#333;
+  padding:20px;
+text-align: center;}
+ul {list-style-position: inside;}
+ img {width: 20%; height:20%;   border-color: black; }
+   h1 {color: black; font-family: times; }
+   h2 {color: black; font-size: 1.5em;}
+   h4 { color:black; }
+   body,html { height: 100%; font-family: "Permanent Marker";}   
+  
+
+   @media only screen and (max-device-width: 900px) {
+     body {
+          padding: 20px !important;
+
+     }
+    .parallax {
+          
+          height: 0%;
+
+     }
+     #middle {
+          font-size: 40px !important; margin-right: 0px; margin-left: 0px; 
+     }
+     #top{
+          font-size: 26px !important;
+     }
+
+
+    
+}
+  
+
+
+
+
+
 

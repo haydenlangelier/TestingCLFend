@@ -72,10 +72,14 @@
 <head>
    <% include ../partials/header.ejs %>
 
-<!--   <meta charset="UTF-8">
-  <title> Fender Test Site</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine"> -->
+<script type="text/javascript">
+   clevertap.profile.push({
+ "Site": {
+   "Name": "Hayden Langelier", 
+   "Email": “haydenlangelier@utexas.edu”
+ }
+});
+</script>
   
 </head>
 <body>
@@ -107,7 +111,7 @@
 <p> If you want to learn a couple easy songs just click the link below! </p>
 
 <a href="https://www.fender.com/articles/how-to/10-easy-songs-to-learn-with-3-chords-or-less"> Link to learn!</a> </li>
-
+<input id="clickMe" type="button" value="clickme" onclick="doFunction();" />
 
 <h2> Gear </h2>
 <p> If you want to see some amazing gear check out the link below!  </p>
@@ -122,6 +126,12 @@
 <br>
 
 </div>
+<script type="text/javascript">
+  function doFunction() {
+   clevertap.event.push("Product Viewed");             
+}
+  
+</script>
 </body>
 <a href="https://www.fender.com/pages/about">Click here to learn more about Fender!</a>
 </div>
